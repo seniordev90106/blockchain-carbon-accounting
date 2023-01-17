@@ -1,0 +1,25 @@
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: "2.1"
+
+networks:
+  carbonAccounting:
+
+services:
+  chaincode-emissions1:
+    container_name: chaincode-emissions1.carbonAccounting.com
+    image: zzocker20/utilityemissions-chaincode:0.0.6
+    environment:
+      - CHAINCODE_CCID=
+      - CHAINCODE_ADDRESS=0.0.0.0:9998
+    ports:
+      - "9998:9998"
+  chaincode-datalock1:
+    container_name: chaincode-datalock1.carbonAccounting.com
+    image: zzocker20/datalock-chaincode:0.0.1
+    environment:
+      - CHAINCODE_ID=datalock:92cd21eedd379eb28cf47edba594a5ad09a10b378846c663441db18db14aca09
+      - CHAINCODE_ADDRESS=0.0.0.0:9988
+      - DATALOCK_LOG_LEVEL=DEBUG

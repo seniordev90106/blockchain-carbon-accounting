@@ -1,0 +1,125 @@
+{
+  "activities": [
+    {
+      "id": "1",
+      "type": "shipment",
+      "carrier": "ups",
+      "tracking": "1Z038EY90300111653"
+    },
+    {
+      "id": "1a",
+      "type": "shipment",
+      "carrier": "ups",
+      "tracking": "1Z038EY90300111662",
+      "from_date": "2020-03-02T08:13:28.311Z",
+      "thru_date": "2020-03-02T09:32:23.172Z"
+    },
+    {
+      "id": "2",
+      "type": "shipment",
+      "carrier": "ups",
+      "tracking": "1z9876543210123456",
+      "mode": "air",
+      "from": {
+        "country": "USA",
+        "state_province": "CA",
+        "city": "Los Angeles",
+        "address": "123 Foxboro"
+      },
+      "to": {
+        "country": "France",
+        "city": "Paris",
+        "address": "Grand Palais"
+      }
+    },
+    {
+      "id": "3",
+      "type": "flight",
+      "carrier": "Air France",
+      "flight_number": "AF666",
+      "from_date": "2021-03-23T18:25:43.511Z",
+      "thru_date": "2012-03-24T09:47:23.172Z",
+      "from": {
+        "country": "France",
+        "city": "Paris",
+        "address": "Charle de Gaulle"
+      },
+      "to": {
+        "country": "Portugal",
+        "city": "Lisbon"
+      }
+    },
+    {
+      "id": "4",
+      "type": "unknown"
+    },
+    {
+      "id": "5",
+      "type": "shipment",
+      "mode": "ground",
+      "from": {
+        "country": "USA",
+        "state_province": "CA",
+        "city": "Los Angeles",
+        "address": "123 Foxboro"
+      },
+      "to": {
+        "country": "USA",
+        "state_province": "NY",
+        "city": "NY",
+        "address": "200 Park Ave"
+      },
+      "weight": "15",
+      "weight_uom": "lbs"
+    },
+    {
+      "id": "6",
+      "type": "flight",
+      "carrier": "Air France",
+      "flight_number": "AF666",
+      "from_date": "2021-02-02T08:13:28.311Z",
+      "thru_date": "2021-02-02T09:32:23.172Z",
+      "class": "business",
+      "from": {
+        "country": "France",
+        "city": "Paris",
+        "address": "Charle de Gaulle"
+      },
+      "to": {
+        "country": "Portugal",
+        "city": "Lisbon"
+      }
+    },
+    {
+      "id": "7",
+      "type": "emissions_factor",
+      "from_date": "2021-02-02T08:13:28.311Z",
+      "thru_date": "2021-02-02T09:32:23.172Z",
+      "carrier": "Air France",
+      "flight_number": "AF666",
+      "class": "business",
+      "distance": "4000",
+      "distance_uom": "miles",
+      "number_of_passengers": "2",
+      "scope": "Scope 3",
+      "level_1": "BUSINESS TRAVEL- AIR",
+      "level_2": "FLIGHTS",
+      "level_3": "INTERNATIONAL, TO/FROM NON-UK",
+      "level_4": "BUSINESS CLASS",
+      "text": "With RF"
+    },
+    {
+      "id": "8",
+      "type": "emissions_factor",
+      "from_date": "2021-02-02T08:13:28.311Z",
+      "thru_date": "2021-02-02T09:32:23.172Z",
+      "distance": "124",
+      "distance_uom": "km",
+      "number_of_passengers": "2",
+      "scope": "Scope 3",
+      "level_1": "BUSINESS TRAVEL- SEA",
+      "level_2": "FERRY",
+      "level_3": "FOOT PASSENGER"
+    }
+  ]
+}

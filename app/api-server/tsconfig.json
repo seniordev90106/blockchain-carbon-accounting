@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "composite":true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "dist",
+    "target": "es2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true
+  },
+  "exclude": ["dist/**/*","node_modules/**/*"],
+  "input": ["**/*.ts"],
+  "references": [
+    {"path": "../../data"},
+    {"path": "../frontend/contracts"},
+    {"path": "../../lib/supply-chain"},
+  ]
+}

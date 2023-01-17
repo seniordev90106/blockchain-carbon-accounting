@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "strict": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "outDir": "dist",
+        "target": "es2020",
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "sourceMap": true
+    },
+    "references": [
+        {"path": "../lib/data-common"},
+        {"path": "../lib/emissions_data"},
+        {"path": "../lib/oil-and-gas-data"}
+    ],
+    "exclude": ["dist/**/*", "test/**/*"]
+}
+
